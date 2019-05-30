@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700,300);
+
+$font-family: 'Poppins', sans-serif;
+$bg: #1B1820;
+$header: #F7D379;
+$my-work: #505163;
+$my-name: #F38A6C;
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+}
+
+body { 
+  background: $bg;
+}
+
+.my-work {
+  color: $my-work;
+}
+
+.my-name {
+  color: $my-name;
+}
+
+h1 {
+  font-weight: bold;
+  
+  font-size: 100px;
+}
+
+@media screen and (max-width: 39.9375em) {
+  h1 {
+    font-size: 54px;
+  }
+}
+
+.row--full-height {
+  height: 100vh;
+  background: url("https://s3-us-west-2.amazonaws.com/mblode.grav/1.svg") no-repeat;
+  background-size: cover;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-height: 100px;
+}
+
+.top-bar, .top-bar ul {
+  background: transparent;
+}
+
+.menu-text {
+  font-size: 24px;
+  a {
+    color: $my-name;
+  }
+}
+
+.margin-no {
+  margin-bottom: 0px;
+}
+
+.margin-md {
+  margin-bottom: 32px;
+}
+
+.header {
+  color: $header;
+  
+  @media screen and (min-width: 40em) {
+    h1, h4 {
+      display: inline-block;
+    }
+
+    h4 {
+      text-align: left;
+    }
+  }
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px
+}
+
+@media screen and (min-width: 40em) {
+  .my-lifestyle {
+    position: relative; 
+  }
+}
+
+
+@media screen and (min-width: 40em) {
+  .br {
+    display: block;
+  }
+}
+
+.avatar {
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .my-name {
+    display: inline-block; 
+    position: relative;
+    top: -80px;
+    margin: 0;
+    text-align: right;
+    left: 60px;
+  }
+}
